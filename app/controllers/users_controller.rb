@@ -12,11 +12,7 @@ class UsersController < ApplicationController
   end
   def show
     @user = User.find(params[:id])
-    if @user.save
-       
-    else
-      render :new
-    end
+    
   end
   private
   def user_params
